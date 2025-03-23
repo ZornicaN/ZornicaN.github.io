@@ -22,7 +22,7 @@
         }
         h1 {
             font-size: 3em;
-            color: #ddd; /* Променям цвета на заглавието на стандартния (#ddd) */
+            color: #ddd; /* Цвят на заглавието */
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
             margin-bottom: 20px;
             text-align: center;
@@ -44,10 +44,7 @@
             margin: 20px auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-        img:hover {
-            transform: scale(1.02);
+            /* Премахвам hover ефекта за снимката */
         }
         a {
             display: inline-block;
@@ -57,11 +54,11 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            transition: background-color 0.3s ease; /* Премахвам transform ефекта */
         }
         a:hover {
             background-color: #45a049;
-            transform: scale(1.05);
+            /* Премахвам scale ефекта */
         }
     </style>
 </head>
