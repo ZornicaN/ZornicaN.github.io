@@ -13,7 +13,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px; /* Увеличавам ширината на контейнера */
             margin: auto;
             background: #222;
             padding: 20px;
@@ -34,6 +34,16 @@
         }
         .image-container img {
             max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .image-row {
+            display: flex; /* Подрежда изображенията едно до друго */
+            justify-content: space-between; /* Разпределя пространството между изображенията */
+            gap: 15px; /* Добавя разстояние между изображенията */
+        }
+        .image-row img {
+            max-width: 48%; /* Ограничава ширината на всяко изображение в реда */
             height: auto;
             border-radius: 10px;
         }
@@ -59,8 +69,14 @@
 
         <p><span class="character">Елис</span>, виртуален експерт по хакерство, се гмурна в мрежата, докато <span class="character">Лиам</span> и <span class="character">Зои</span> осигуряваха физическата защита в реалния свят.</p>
 
-        <div class="image-container">
-            <img src="DALL·E3.jpg" alt="Изображение на защитни алгоритми">
+        <!-- Ред с изображения на виртуалната мрежа -->
+        <div class="image-row">
+            <div class="image-container">
+                <img src="DALL·E3.jpg" alt="Изображение на защитни алгоритми">
+            </div>
+            <div class="image-container">
+                <img src="DALL·E8.jpg.webp" alt="Ново изображение на виртуална мрежа">
+            </div>
         </div>
 
         <p>"Кодът на тази система е много по-сложен, отколкото очаквах," прошепна Зои, докато разшифроваше защитните алгоритми.</p>
